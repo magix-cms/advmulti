@@ -1,0 +1,105 @@
+//
+// Rules for home page
+//
+// Compiler options
+@import (reference) "mixins";
+//
+// Rules for home page
+//
+#advmulti {
+	padding: 4rem 0 4rem;
+	margin: 0 0 2rem 0;
+	background-color: var(--dark-color);
+	color: var(--white);
+
+	.row {
+		@media (max-width: .breakpoint(sm)[max]) {
+			flex-direction: column;
+		}
+	}
+	.adv{
+		padding: 1rem;
+		//flex: 1 0 0;
+		@media (min-width: .breakpoint(sm)[min]) {
+			flex: 1 0 20%;
+			//border-right: 1px solid var(--main-color);
+			//max-width: 20%;
+		}
+		.media {
+			position: relative;
+			margin-bottom: 1.5rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			@media (min-width: .breakpoint(sm)[min]) {
+				padding: 0;
+			}
+			@media (max-width: .breakpoint(sm)[max]) {
+				.all-hover{
+					//text-indent: unset;
+					overflow: hidden;
+				}
+			}
+			/*&-left {
+				padding-right: 15px;
+			}
+			&-right {
+				padding-left: 15px;
+			}
+			&-top {
+				padding-bottom: 15px;
+			}
+			&-bottom {
+				padding-top: 15px;
+			}*/
+			.media-body {
+				&.icon-top,
+				&.icon-bottom {
+					text-align: center;
+				}
+
+				&.icon-right {
+					text-align: right;
+				}
+			}
+			.media-title{
+				//font-size: var(--fz-h4);
+				display: flex;
+				flex-direction: column;
+				h3{
+					font-size: var(--fz-h5);
+					color: var(--white);
+				}
+				.icon {
+					//text-align: center;
+					margin-bottom: var(--spacer);
+					> i,
+					> span {
+						font-size: 6rem;
+						color: var(--white);
+						.auto-transition(.25s);
+					}
+				}
+			}
+		}
+		&:hover, &:focus {
+			.media {
+				.media-title {
+					/*.title {
+						h3 {
+							color: var(--main-color);
+						}
+					}*/
+					.icon {
+						> i,
+						> span {
+							color: var(--main-color-light);
+							//transform: scale(1.2) rotate(.01deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}

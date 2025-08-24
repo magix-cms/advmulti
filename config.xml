@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- /*
+ * MAGIX CMS Copyright (c) 2008 - 2017 Gerits Aurelien,
+ * http://www.magix-cms.com
+ * Dual licensed under the MIT AND GPL Version 3 licenses.
+ *
+ * Date: september 06 13:07 2017
+ */-->
+<config>
+<authorized>
+	<allow_access>*</allow_access>
+</authorized>
+<data>
+	<authors>
+		<author>
+			<name>Gerits Aurelien</name>
+			<website href="http://www.magix-cms.com" />
+		</author>
+	</authors>
+	<release>
+		<date_create>11/07/2025</date_create>
+		<version>1.0</version>
+		<phase>Stable</phase>
+	</release>
+	<bind>
+		<core>
+			<name>home</name>
+		</core>
+		<core>
+			<name>about</name>
+		</core>
+		<core>
+			<name>pages</name>
+		</core>
+		<core>
+			<name>news</name>
+		</core>
+		<core>
+			<name>catalog</name>
+		</core>
+		<core>
+			<name>category</name>
+		</core>
+		<core>
+			<name>product</name>
+		</core>
+		<plugin>
+			<name>contact</name>
+		</plugin>
+		<plugin>
+			<name>gmap</name>
+		</plugin>
+	</bind>
+	<support>
+		<ticket href="https://github.com/magix-cms/banner/issues"></ticket>
+		<git href="https://github.com/magix-cms/banner"></git>
+	</support>
+</data>
+</config>
