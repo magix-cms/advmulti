@@ -1,4 +1,4 @@
-Banner
+Advmulti
 =========
 
 Plugin Advmulti (advantage multiple) for Magix CMS 3
