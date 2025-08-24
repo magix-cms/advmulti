@@ -24,9 +24,6 @@
 	</release>
 	<bind>
 		<core>
-			<name>home</name>
-		</core>
-		<core>
 			<name>about</name>
 		</core>
 		<core>
@@ -36,24 +33,15 @@
 			<name>news</name>
 		</core>
 		<core>
-			<name>catalog</name>
-		</core>
-		<core>
 			<name>category</name>
 		</core>
 		<core>
 			<name>product</name>
 		</core>
-		<plugin>
-			<name>contact</name>
-		</plugin>
-		<plugin>
-			<name>gmap</name>
-		</plugin>
 	</bind>
 	<support>
-		<ticket href="https://github.com/magix-cms/banner/issues"></ticket>
-		<git href="https://github.com/magix-cms/banner"></git>
+		<ticket href="https://github.com/magix-cms/advmulti/issues"></ticket>
+		<git href="https://github.com/magix-cms/advmulti"></git>
 	</support>
 </data>
 </config>
