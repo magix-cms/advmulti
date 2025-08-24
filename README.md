@@ -25,6 +25,12 @@ Plugin Advmulti (advantage multiple) for Magix CMS 3
 La mise à jour du plugin est à effectuer en remplaçant le dossier du plugin par la nouvelle version
 et de se connecter à l'administration de celui-ci pour faire la mise à jour des tables SQL.
 
+### Ajouter dans index.tpl (pages) la ligne suivante
+
+```smarty
+{advmulti_data controller='pages' root="pages" id_module=$pages.id}
+{include file="advmulti/brick/advmulti.tpl" orientation="top"}
+````
 
 <pre>
 
